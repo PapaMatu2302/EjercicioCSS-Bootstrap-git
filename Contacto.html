@@ -5,17 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
 </head>
 <body>
+    <div class="p-3 mb-2 bg-danger text-white">
+        <img src="tecniopticalogo.png" alt="Logo Tecni">
+    <nav>
+    <ul class="nav justify-content-center">
+        <li><a class="nav-link" href="index.html">Inicio</a>  </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="QuienesSomos.html">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contacto.html">Contacto</a>
+        </li>
+        
+      </ul>
+    </nav>
     <h1>CONTACTO</h1>
     <p>Contamos con ocho sucursales en la ciudad de Mar del Plata y una en Capital Federal.</p><br>
     <h2>Escribanos:</h2>
-    <form>
-       <input type="text" name="nombre" required placeholder="Nombre*"> <br>
-       <input type="text" name="Apellido" required placeholder="Apellido*"><br>
-       <input type="number" name="Telefono" required placeholder="Teléfono*"><br>
-       <input type="email" name="email" required placeholder="E-mail*">
+    <form action="">
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" required>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" required> 
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono" required>
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" placeholder="ejemplo@email.com" aria-label="Email" required>
+          </div>
+      </div>
+    <input type="submit">
     </form>
+</div>
 </body>
 </html>
